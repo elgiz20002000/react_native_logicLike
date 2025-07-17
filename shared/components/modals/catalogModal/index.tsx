@@ -1,4 +1,5 @@
 import colors from '@shared/constants/colors';
+import { Dimensions } from 'react-native';
 import { TNullable, TVoidFunction } from '@shared/types';
 import { FC } from 'react';
 import {
@@ -20,6 +21,8 @@ interface ICatalogModal {
   categories: string[];
   selectedTag?: TNullable<string>;
 }
+
+const { height } = Dimensions.get('window');
 
 export const CatalogModal: FC<ICatalogModal> = ({
   categories,
@@ -96,6 +99,6 @@ const styles = StyleSheet.create({
   },
   optionList: {
     width: 336,
-    paddingBottom: 60,
+    paddingBottom: height * 0.2,
   },
 });

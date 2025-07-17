@@ -106,6 +106,7 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     alignItems: 'center',
+    paddingHorizontal: 16,
   },
   categoriesButton: {
     marginTop: 16,
