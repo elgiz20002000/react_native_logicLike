@@ -1,3 +1,9 @@
 {
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "paths": {
+      "@shared/*": ["./shared/*"],
+    }
+  },
   "extends": "@react-native/typescript-config"
 }
